@@ -291,7 +291,11 @@
             </div>
             <button class="lb-arrow lb-next" id="lbNext" aria-label="Próxima">›</button>
         </div>
-        <div class="lb-dots" id="lbDots"></div>
+        <div class="lb-bottom">
+            <button class="lb-arrow-mobile" id="lbPrevMobile" aria-label="Anterior">‹</button>
+            <div class="lb-dots" id="lbDots"></div>
+            <button class="lb-arrow-mobile" id="lbNextMobile" aria-label="Próxima">›</button>
+        </div>
     </div>
 </div>
 
@@ -314,6 +318,39 @@
     <p>Operação autorizada pelos amigos do JÃO · 16.03.2026</p>
     <p class="footer-sub">Este convite se autodestruirá depois da festa.</p>
 </footer>
+
+<!-- EASTER EGG: MODAL VÍDEO -->
+<div class="ee-modal" id="videoModal">
+    <div class="ee-backdrop" id="videoBackdrop"></div>
+    <div class="ee-box">
+        <p class="ee-status" id="videoStatus">⛔ ACESSO NEGADO</p>
+        <!-- Troque o src pelo caminho do seu vídeo, ex: video/easter.mp4 -->
+        <video id="easterVideo" controls style="display:none; max-width:100%; max-height:55vh; border:1px solid var(--gold-dim);">
+            <source src="img/video-easter.mp4" type="video/mp4">
+        </video>
+        <button class="ee-close" id="videoClose" style="display:none;">✕ FECHAR ARQUIVO</button>
+    </div>
+</div>
+
+<!-- EASTER EGG: MODAL TERMINAL -->
+<div class="ee-modal" id="terminalModal">
+    <div class="ee-backdrop" id="terminalBackdrop"></div>
+    <div class="ee-box ee-terminal-box">
+        <p class="ee-label">TERMINAL — ACESSO NÍVEL ALFA</p>
+        <pre class="ee-terminal" id="terminalText"></pre>
+        <button class="ee-close" id="terminalClose" style="display:none;">✕ ENCERRAR SESSÃO</button>
+    </div>
+</div>
+
+<!-- EASTER EGG: TOAST IDLE -->
+<div class="idle-toast" id="idleToast">
+    <span class="idle-dot">●</span>
+    <div class="idle-text">
+        <strong>AGENTE? VOCÊ AINDA ESTÁ AÍ?</strong>
+        <span>O Jão está esperando sua confirmação. Não dorme não.</span>
+    </div>
+    <button class="idle-dismiss" id="idleDismiss">✕</button>
+</div>
 
 <script src="script.js"></script>
 </body>
