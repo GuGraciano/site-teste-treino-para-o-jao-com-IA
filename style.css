@@ -440,6 +440,21 @@ body {
     color: var(--text);
 }
 
+.ev-video { grid-template-columns: 1.2fr 1fr; }
+
+.ev-video-wrap {
+    background: #000;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+}
+
+.ev-video-wrap video {
+    width: 100%;
+    display: block;
+    max-height: 400px;
+    object-fit: contain;
+}
+
 .evidence-double {
     display: grid;
     grid-template-columns: 1fr 1fr;

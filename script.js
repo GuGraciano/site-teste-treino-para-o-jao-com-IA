@@ -115,7 +115,10 @@ const imagens = [
     "img/junino.jpeg",
     "img/trio.jpeg",
     "img/namo do jao.jpeg",
-    "img/salgadin.jpeg"
+    "img/salgadin.jpeg",
+    "img/joao e seus amigos cancer.jpeg",
+    "img/sla.jpeg",
+    "img/musica.jpeg"
 ];
 
 const lightbox  = document.getElementById("lightbox");
@@ -416,4 +419,4 @@ document.getElementById("idleDismiss").addEventListener("click", () => {
     document.addEventListener(ev, resetIdle, { passive: true });
 });
 
-resetIdle(); // começa o timer
+resetIdle(); // começa o timer  
