@@ -20,7 +20,7 @@ setTimeout(typeNext, 900);
 // COUNTDOWN
 // ============================
 
-const dataFesta = new Date("March 16, 2026 19:00:00").getTime();
+const dataFesta = new Date("March 14, 2026 20:00:00").getTime();
 
 const cdDias  = document.getElementById("cdDias");
 const cdHoras = document.getElementById("cdHoras");
@@ -46,7 +46,7 @@ const countdownInterval = setInterval(() => {
         cdHoras.textContent = "00";
         cdMin.textContent   = "00";
         cdSeg.textContent   = "00";
-        if (cdSub) cdSub.textContent = "⚡ O CAOS JÁ COMEÇOU. Por que você ainda está aqui? VÁ LOGO.";
+        if (cdSub) cdSub.textContent = "⚡ O CAOS JÁ COMEÇOU. Por que você ainda está aqui? VÁ LOGO pro Sr.Snooker.";
         return;
     }
 
@@ -270,7 +270,21 @@ function dispararChuvaEmojis() {
     }
 }
 
-// ---- 2. CARIMBO → vídeo ----
+// ---- MODAL SEGREDOS (botão desisto) ----
+document.getElementById("giveupBtn").addEventListener("click", () => {
+    document.getElementById("secretsModal").classList.add("open");
+    document.body.style.overflow = "hidden";
+});
+
+document.getElementById("secretsClose").addEventListener("click", () => {
+    document.getElementById("secretsModal").classList.remove("open");
+    document.body.style.overflow = "";
+});
+
+document.getElementById("secretsBackdrop").addEventListener("click", () => {
+    document.getElementById("secretsModal").classList.remove("open");
+    document.body.style.overflow = "";
+});
 const stamp = document.querySelector(".stamp");
 const videoModal    = document.getElementById("videoModal");
 const videoModalEl  = document.getElementById("easterVideo");
